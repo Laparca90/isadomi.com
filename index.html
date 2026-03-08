@@ -1,109 +1,223 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ISADOMI SRL | Catálogo de Productos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ISADOMI SRL | Impermeabilizantes</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS EXTERNO -->
+<link rel="stylesheet" href="estilos.css">
+
+<!-- CSS INTERNO -->
+<style>
+
+#logo{
+width:320px;
+animation: aparecer 2s ease-in-out;
+}
+
+h1{
+letter-spacing:2px;
+}
+
+.container{
+width:90%;
+margin:auto;
+}
+
+.productos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.producto{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.producto img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.form-grid{
+display:grid;
+gap:15px;
+}
+
+input:invalid, textarea:invalid{
+border:2px solid red;
+}
+
+input:valid{
+border:2px solid green;
+}
+
+@keyframes aparecer{
+from{opacity:0; transform:translateY(-20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+</style>
+
 </head>
-<body bgcolor="#F4F7F9" text="#333333">
 
-    <header align="center">
-        <img src="PRODUCTOS Y LOGO/LOGO ISADOMI.png" alt="Logotipo oficial de ISADOMI SRL" width="350" />
-        <h1>Impermeabilizantes Santo Domingo</h1>
-        <p><i>"En Santo Domingo llueve, pero en tu casa no.®"</i></p>
-    </header>
-    
-    <hr color="#0056b3" size="3" />
+<body>
 
-    <main>
-        <section align="center">
-            <table width="800" align="center" cellpadding="20">
-                <tr>
-                    <td>
-                        <p align="center">
-                            Empresa especializada en la venta de impermeabilizantes de alta calidad para proteger tus superficies contra la humedad y las filtraciones.
-                        </p>
-                    </td>
-                </tr>
-            </table>
-        </section>
+<header class="container header-flex">
 
-        <h2 align="center"><font color="#0056b3">Nuestros Productos</font></h2>
+<img id="logo" src="PRODUCTOS Y LOGO/LOGO ISADOMI.png" alt="Logo ISADOMI">
 
-        <table width="900" align="center" border="0" cellpadding="15" cellspacing="10">
-            <tr>
-                <td width="50%" bgcolor="#FFFFFF" align="center" valign="top" style="border: 1px solid #CCCCCC;">
-                    <font face="Arial">
-                        <strong>FlexSeal</strong>
-                        <p><small>Recubrimiento a base de aluminio liquido, ideal para reducir temperatura y repeler rayos UV.</small></p>
-                        <img src="PRODUCTOS Y LOGO/Flex-Seal-Aluminio.jpg" alt="Impermeabilizante Acrílico Flex Seal" height="180" />
-                    </font>
-                </td>
-                <td width="50%" bgcolor="#FFFFFF" align="center" valign="top" style="border: 1px solid #CCCCCC;">
-                    <font face="Arial">
-                        <strong>Impermeabilizante Elastomérico</strong>
-                        <p><small>Excelente flexibilidad para terrazas y balcones.</small></p>
-                        <img src="PRODUCTOS Y LOGO/Copia de Unknown.jpeg" alt="Impermeabilizante Elastomérico" height="180" />
-                    </font>
-                </td>
-            </tr>
-            <tr>
-                <td width="50%" bgcolor="#FFFFFF" align="center" valign="top" style="border: 1px solid #CCCCCC;">
-                    <font face="Arial">
-                        <strong>Cemento Plastico</strong>
-                        <p><small>Sellador de grietas y fisuras.</small></p>
-                        <img src="PRODUCTOS Y LOGO/Cemento-Plastico.jpg" alt="Impermeabilizante Cementoso" height="180" />
-                    </font>
-                </td>
-                <td width="50%" bgcolor="#FFFFFF" align="center" valign="top" style="border: 1px solid #CCCCCC;">
-                    <font face="Arial">
-                        <strong>Impermeabilizante Bituminoso</strong>
-                        <p><small>Para techos planos y condiciones extremas.</small></p>
-                        <img src="PRODUCTOS Y LOGO/Vodipren-90.jpg" alt="Impermeabilizante Bituminoso Vodipren" height="180" />
-                    </font>
-                </td>
-            </tr>
-        </table>
+<div>
+<h1>Impermeabilizantes Santo Domingo</h1>
+<p>"De la mano con tus necesidades"</p>
+</div>
 
-        <br />
-        <hr color="#0056b3" size="3" />
+</header>
 
-        <section align="center">
-            <h2>Contáctanos</h2>
-            <table bgcolor="#0056b3" width="500" align="center" cellpadding="20" style="border-radius: 10px;">
-                <tr>
-                    <td>
-                        <font color="#FFFFFF" face="Arial">
-                            <form action="procesar.php" method="post">
-                                <label for="nombre">Nombre:</label><br />
-                                <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre real"
 
-                                    size="40" required /><br /><br />
+<section class="container intro">
 
-                                <label for="correo">Correo Electrónico:</label><br />
-                                <input type="email" id="correo" name="correo" size="40" required /><br /><br />
+<p style="font-size:18px; line-height:1.6;">
+Empresa especializada en impermeabilizantes de alta calidad para proteger tus superficies contra humedad y filtraciones.
+</p>
 
-                                <label for="mensaje">Mensaje:</label><br />
-                                <textarea id="mensaje" name="mensaje" rows="5" cols="42" required></textarea><br /><br />
+</section>
 
-                                <button type="submit" style="width: 100%; height: 40px; cursor: pointer;"><b>ENVIAR MENSAJE</b></button>
-                            </form>
-                        </font>
-                    </td>
-                </tr>
-            </table>
-        </section>
-    </main>
 
-    <br />
-    <footer align="center">
-        <hr />
-        <p><strong>Teléfono: </strong>(829) 984 - 0097 | <strong>Email: </strong> isadomi_s.a1@hotmail.com</p>
-        <a href="https://wa.me/18299840097"><img src="PRODUCTOS Y LOGO/icons8-whatsapp.svg" alt="WhatsApp" width="40" /></a>
-        <a href="mailto:isadomi_s.a1@hotmail.com"><img src="PRODUCTOS Y LOGO/icons8-correo-electrónico-48.png" alt="Email" width="40" /></a>
-    </footer>
+<h2 class="titulo-seccion">Nuestros Productos</h2>
+
+
+<section class="container productos">
+
+<div class="producto">
+
+<h3>FlexSeal</h3>
+
+<p>Recubrimiento de aluminio líquido que reduce temperatura y rayos UV.</p>
+
+<img src="PRODUCTOS Y LOGO/Flex-Seal-Aluminio.jpg">
+
+<button class="button">Ver producto</button>
+
+</div>
+
+
+<div class="producto">
+
+<h3>Impermeabilizante Elastomérico</h3>
+
+<p>Excelente flexibilidad para terrazas y balcones.</p>
+
+<img src="PRODUCTOS Y LOGO/Copia de Unknown.jpeg">
+
+<button class="button">Ver producto</button>
+
+</div>
+
+
+<div class="producto">
+
+<h3>Cemento Plástico</h3>
+
+<p>Sellador de grietas y fisuras.</p>
+
+<img src="PRODUCTOS Y LOGO/Cemento-Plastico.jpg">
+
+<button class="button">Ver producto</button>
+
+</div>
+
+
+<div class="producto">
+
+<h3>Impermeabilizante Bituminoso</h3>
+
+<p>Para techos planos y condiciones extremas.</p>
+
+<img src="PRODUCTOS Y LOGO/Vodipren-90.jpg">
+
+<button class="button">Ver producto</button>
+
+</div>
+
+</section>
+
+
+<section class="container contacto">
+
+<h2 class="titulo-seccion">Contáctanos</h2>
+
+<form class="form-grid">
+
+<input type="text" placeholder="Nombre" required>
+
+<input type="email" placeholder="Correo electrónico" required>
+
+<textarea placeholder="Escribe tu mensaje" rows="5" required></textarea>
+
+<button class="button">Enviar mensaje</button>
+
+</form>
+
+</section>
+
+
+<footer class="footer">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>ISADOMI SRL</h3>
+
+<p>Especialistas en impermeabilización.</p>
+
+</div>
+
+<div>
+
+<h3>Contacto</h3>
+
+<p>📞 (829) 984-0097</p>
+<p>✉ isadomi_s.a1@hotmail.com</p>
+
+</div>
+
+<div>
+
+<h3>Redes</h3>
+
+<a class="social" href="https://wa.me/18299840097">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<a class="social" href="mailto:isadomi_s.a1@hotmail.com">
+<i class="fas fa-envelope"></i>
+</a>
+
+</div>
+
+</div>
+
+<p class="copyright">
+© 2026 ISADOMI SRL
+</p>
+
+</footer>
+
 </body>
 </html>
-
-
-
