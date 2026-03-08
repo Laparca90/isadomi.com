@@ -18,6 +18,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+header .container{
+    text-align: center;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
