@@ -4,103 +4,124 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ISADOMI SRL | Catálogo de Productos</title>
+    <!-- Vincular archivo CSS externo -->
+    <link rel="stylesheet" href="estilos.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Estilos internos -->
+    <style>
+        /* Reglas CSS internas */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+        }
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.5rem;
+            color: #0056b3;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+        .product-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        #contact-form {
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .social-link:active {
+            transform: scale(0.9);
+        }
+    </style>
 </head>
-<body bgcolor="#F4F7F9" text="#333333">
+<body>
+    <header style="background-color: #f4f7f9; padding: 20px 0;">
+        <div class="container">
+            <img src="PRODUCTOS Y LOGO/LOGO ISADOMI.png" alt="Logotipo oficial de ISADOMI SRL" width="350" />
+            <h1 style="text-transform: uppercase;">Impermeabilizantes Santo Domingo</h1>
+            <p style="font-style: italic; color: #555;">"De la mano con tus necesidades!!!"</p>
+        </div>
+    </header>
 
-<header align="center">
-    <img src="PRODUCTOS Y LOGO/LOGO ISADOMI.png" alt="Logotipo oficial de ISADOMI SRL" width="350" />
-    <h1>Impermeabilizantes Santo Domingo</h1>
-    <p><i>"De la mano con tus necesidades!!!"</i></p>
-</header>
+    <hr class="divider" />
 
-<hr color="#0056b3" size="3" />
+    <main>
+        <section class="intro">
+            <div class="container">
+                <p>Empresa especializada en la venta de impermeabilizantes de alta calidad para proteger tus superficies contra la humedad y las filtraciones.</p>
+            </div>
+        </section>
 
-<main>
-    <section align="center">
-        <table width="800" align="center" cellpadding="20">
-            <tr>
-                <td>
-                    <p align="center">
-                        Empresa especializada en la venta de impermeabilizantes de alta calidad para proteger tus superficies contra la humedad y las filtraciones.
-                    </p>
-                </td>
-            </tr>
-        </table>
-    </section>
+        <section class="products">
+            <h2>Nuestros Productos</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>FlexSeal</h3>
+                    <p>Recubrimiento a base de aluminio líquido, ideal para reducir temperatura y repeler rayos UV.</p>
+                    <img src="PRODUCTOS Y LOGO/Flex-Seal-Aluminio.webp" alt="Impermeabilizante Acrílico Flex Seal" height="180" />
+                </div>
+                <div class="product-card">
+                    <h3>Impermeabilizante Elastomérico</h3>
+                    <p>Excelente flexibilidad para terrazas y balcones.</p>
+                    <img src="PRODUCTOS Y LOGO/Copia de Unknown.webp" alt="Impermeabilizante Elastomérico" height="180" />
+                </div>
+                <div class="product-card">
+                    <h3>Cemento Plástico</h3>
+                    <p>Sellador de grietas y fisuras.</p>
+                    <img src="PRODUCTOS Y LOGO/Cemento-Plastico.webp" alt="Impermeabilizante Cementoso" height="180" />
+                </div>
+                <div class="product-card">
+                    <h3>Impermeabilizante Bituminoso</h3>
+                    <p>Para techos planos y condiciones extremas.</p>
+                    <img src="PRODUCTOS Y LOGO/Vodipren-90.webp" alt="Impermeabilizante Bituminoso Vodipren" height="180" />
+                </div>
+            </div>
+        </section>
 
-    <h2 align="center"><font color="#0056b3">Nuestros Productos</font></h2>
+        <hr class="divider" />
 
-    <table width="900" align="center" border="0" cellpadding="15" cellspacing="10">
-        <tr>
-            <td width="50%" bgcolor="#FFFFFF" align="center" valign="top" style="border: 1px solid #CCCCCC;">
-                <font face="Arial">
-                    <strong>FlexSeal</strong>
-                    <p><small>Recubrimiento a base de aluminio liquido, ideal para reducir temperatura y repeler rayos UV.</small></p>
-                    <img src="PRODUCTOS Y LOGO/Flex-Seal-Aluminio.jpg" alt="Impermeabilizante Acrílico Flex Seal" height="180" />
-                </font>
-            </td>
-            <td width="50%" bgcolor="#FFFFFF" align="center" valign="top" style="border: 1px solid #CCCCCC;">
-                <font face="Arial">
-                    <strong>Impermeabilizante Elastomérico</strong>
-                    <p><small>Excelente flexibilidad para terrazas y balcones.</small></p>
-                    <img src="PRODUCTOS Y LOGO/Copia de Unknown.jpeg" alt="Impermeabilizante Elastomérico" height="180" />
-                </font>
-            </td>
-        </tr>
-        <tr>
-            <td width="50%" bgcolor="#FFFFFF" align="center" valign="top" style="border: 1px solid #CCCCCC;">
-                <font face="Arial">
-                    <strong>Cemento Plastico</strong>
-                    <p><small>Sellador de grietas y fisuras.</small></p>
-                    <img src="PRODUCTOS Y LOGO/Cemento-Plastico.jpg" alt="Impermeabilizante Cementoso" height="180" />
-                </font>
-            </td>
-            <td width="50%" bgcolor="#FFFFFF" align="center" valign="top" style="border: 1px solid #CCCCCC;">
-                <font face="Arial">
-                    <strong>Impermeabilizante Bituminoso</strong>
-                    <p><small>Para techos planos y condiciones extremas.</small></p>
-                    <img src="PRODUCTOS Y LOGO/Vodipren-90.jpg" alt="Impermeabilizante Bituminoso Vodipren" height="180" />
-                </font>
-            </td>
-        </tr>
-    </table>
+        <section class="contact">
+            <h2>Contáctanos</h2>
+            <form id="contact-form" action="procesar.php" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre real" required />
+                    <span class="error-message">Por favor, ingrese un nombre válido.</span>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required />
+                    <span class="error-message">Por favor, ingrese un correo válido.</span>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escriba su mensaje" required></textarea>
+                    <span class="error-message">El mensaje no puede estar vacío.</span>
+                </div>
+                <button type="submit" class="button">ENVIAR MENSAJE <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </section>
+    </main>
 
-    <br />
-    <hr color="#0056b3" size="3" />
-
-    <section align="center">
-        <h2>Contáctanos</h2>
-        <table bgcolor="#0056b3" width="500" align="center" cellpadding="20" style="border-radius: 10px;">
-            <tr>
-                <td>
-                    <font color="#FFFFFF" face="Arial">
-                        <form action="procesar.php" method="post">
-                            <label for="nombre">Nombre:</label><br />
-                            <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre real" size="40" required /><br /><br />
-
-                            <label for="correo">Correo Electrónico:</label><br />
-                            <input type="email" id="correo" name="correo" size="40" required /><br /><br />
-
-                            <label for="mensaje">Mensaje:</label><br />
-                            <textarea id="mensaje" name="mensaje" rows="5" cols="42" required></textarea><br /><br />
-
-                            <button type="submit" style="width: 100%; height: 40px; cursor: pointer;"><b>ENVIAR MENSAJE</b></button>
-                        </form>
-                    </font>
-                </td>
-            </tr>
-        </table>
-    </section>
-</main>
-
-<br />
-
-<footer align="center">
-    <hr />
-    <p><strong>Teléfono: </strong>(829) 984 - 0097 | <strong>Email: </strong> isadomi_s.a1@hotmail.com</p>
-    <a href="https://wa.me/18299840097"><img src="PRODUCTOS Y LOGO/icons8-whatsapp.svg" alt="WhatsApp" width="40" /></a>
-    <a href="mailto:isadomi_s.a1@hotmail.com"><img src="PRODUCTOS Y LOGO/icons8-correo-electrónico-48.png" alt="Email" width="40" /></a>
-</footer>
-
+    <footer>
+        <div class="container">
+            <p><strong>Teléfono:</strong> (829) 984-0097 | <strong>Email:</strong> isadomi_s.a1@hotmail.com</p>
+            <p><strong>Dirección:</strong> Av. Independencia, Santo Domingo, República Dominicana</p>
+            <p><strong>Horario:</strong> Lunes a Viernes, 8:00 AM - 5:00 PM</p>
+            <div class="social-links">
+                <a href="https://wa.me/18299840097" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:isadomi_s.a1@hotmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
