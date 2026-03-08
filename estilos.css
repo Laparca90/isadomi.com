@@ -1,4 +1,3 @@
-/* Paleta de colores modular */
 :root {
     --primary: #0056b3;
     --secondary: #f4f7f9;
@@ -7,7 +6,6 @@
     --error: #e74c3c;
 }
 
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -20,14 +18,12 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Contenedor reutilizable */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Divider */
 .divider {
     border: 0;
     height: 3px;
@@ -35,14 +31,12 @@ body {
     margin: 20px 0;
 }
 
-/* Sección intro */
 .intro {
     text-align: center;
     padding: 40px 0;
     animation: fadeIn 1s ease-in;
 }
 
-/* Grid para productos */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -64,7 +58,6 @@ body {
     border-radius: 4px;
 }
 
-/* Formulario con Flexbox */
 .contact {
     padding: 40px 0;
     text-align: center;
@@ -116,7 +109,6 @@ textarea:invalid[required]:focus + .error-message {
     display: block;
 }
 
-/* Botón reutilizable */
 .button {
     background: var(--accent);
     color: var(--primary);
@@ -133,7 +125,6 @@ textarea:invalid[required]:focus + .error-message {
     transform: scale(1.05);
 }
 
-/* Footer con Flexbox */
 footer {
     background: var(--primary);
     color: var(--accent);
@@ -162,7 +153,6 @@ footer {
     color: #ffd700;
 }
 
-/* Animaciones */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -174,7 +164,6 @@ footer {
     }
 }
 
-/* Responsividad */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
